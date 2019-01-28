@@ -1,0 +1,56 @@
+body {
+    background-color: pink;
+}
+
+li {
+    list-style: none;
+}
+
+.drag  
+    {  
+    width: 140px;  
+    height: 140px; 
+    float: left;  
+    margin: 10px;  
+    background-color :aqua; 
+    padding:10px;  
+    } 
+
+.dude  
+    {  
+    width: 140px;  
+    height: 140px; 
+    float: left;  
+    margin: 10px;  
+    background-color :aqua; 
+    padding:10px;  
+    } 
+
+.drop 
+    { 
+    width: 160px;  
+    height: 160px;  
+    float: left; 
+    margin: 10px;  
+    // background-color:yellow; 
+    padding:10px; 
+    border: 10px solid black;
+    } 
+
+.dropdude 
+    { 
+    width: 160px;  
+    height: 160px;  
+    float: left; 
+    margin: 10px;  
+    // background-color:yellow; 
+    padding:10px; 
+    border: 10px solid black;
+} 
+
+.highlight {
+  background-color: orange; 
+}
+
+
+
