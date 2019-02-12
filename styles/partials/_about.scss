@@ -1,5 +1,5 @@
 body {
-    background-color: pink;
+    background-color: #ccc;
 }
 
 li {
@@ -12,7 +12,7 @@ li {
     height: 140px; 
     float: left;  
     margin: 10px;  
-    background-color :aqua; 
+    background-color : #f88379; 
     padding:10px;  
     } 
 
@@ -22,7 +22,7 @@ li {
     height: 140px; 
     float: left;  
     margin: 10px;  
-    background-color :aqua; 
+    background-color:aquamarine; 
     padding:10px;  
     } 
 
@@ -32,9 +32,8 @@ li {
     height: 160px;  
     float: left; 
     margin: 10px;  
-    // background-color:yellow; 
     padding:10px; 
-    border: 10px solid black;
+    border: 5px solid black;
     } 
 
 .dropdude 
@@ -49,8 +48,11 @@ li {
 } 
 
 .highlight {
-  background-color: orange; 
+  background-color: aquamarine; 
 }
 
+.questions img {
+    width: 100%;
+}
 
 
