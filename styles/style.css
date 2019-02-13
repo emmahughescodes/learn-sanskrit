@@ -133,6 +133,114 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+h1 {
+  padding: 0;
+  margin: 0; }
+
+.wrapper {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1280px; }
+
+h1 {
+  font-weight: 100;
+  padding: 2%; }
+
+.nav {
+  -webkit-transition: left 0.5s ease;
+  -moz-transition: left 0.5s ease;
+  -ms-transition: left 0.5s ease;
+  -o-transition: left 0.5s ease;
+  transition: left 0.5s ease;
+  background: #28dde0;
+  color: black;
+  cursor: pointer;
+  font-size: 2rem;
+  height: 100vh;
+  left: -20rem;
+  padding: 6rem 2rem 2rem 2rem;
+  position: fixed;
+  top: 0;
+  width: 20rem;
+  z-index: 1; }
+
+.nav.expanded {
+  left: 0; }
+
+.nav ul {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  list-style: none; }
+
+.nav li a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  list-style: none; }
+
+.nav-toggle {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  height: 2rem;
+  left: 2rem;
+  position: fixed;
+  top: 2rem;
+  width: 3.6rem;
+  z-index: 2; }
+
+.nav-toggle:hover {
+  opacity: 0.8; }
+
+.nav-toggle .nav-toggle-bar, .nav-toggle .nav-toggle-bar::after, .nav-toggle .nav-toggle-bar::before {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background: white;
+  content: '';
+  height: 0.4rem;
+  width: 100%; }
+
+.nav-toggle .nav-toggle-bar {
+  margin-top: 0; }
+
+.nav-toggle .nav-toggle-bar::after {
+  margin-top: 0.8rem; }
+
+.nav-toggle .nav-toggle-bar::before {
+  margin-top: -0.8rem; }
+
+.nav-toggle.expanded .nav-toggle-bar {
+  background: transparent; }
+
+.nav-toggle.expanded .nav-toggle-bar::after, .nav-toggle.expanded .nav-toggle-bar::before {
+  background: white;
+  margin-top: 0; }
+
+.nav-toggle.expanded .nav-toggle-bar::after {
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.nav-toggle.expanded .nav-toggle-bar::before {
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+h2 {
+  font-weight: 100; }
+
 body {
   background-color: #ccc; }
 
@@ -142,7 +250,6 @@ li {
 .drag {
   width: 140px;
   height: 140px;
-  float: left;
   margin: 10px;
   background-color: #f88379;
   padding: 10px; }
@@ -150,7 +257,6 @@ li {
 .dude {
   width: 140px;
   height: 140px;
-  float: left;
   margin: 10px;
   background-color: aquamarine;
   padding: 10px; }
@@ -158,7 +264,6 @@ li {
 .drop {
   width: 160px;
   height: 160px;
-  float: left;
   margin: 10px;
   padding: 10px;
   border: 5px solid black; }
@@ -166,7 +271,6 @@ li {
 .dropdude {
   width: 160px;
   height: 160px;
-  float: left;
   margin: 10px;
   padding: 10px;
   border: 10px solid black; }
@@ -176,3 +280,8 @@ li {
 
 .questions img {
   width: 100%; }
+
+.assess {
+  border: 4px solid black;
+  background-color: transparent;
+  padding: 10px; }

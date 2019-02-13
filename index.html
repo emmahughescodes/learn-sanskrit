@@ -8,20 +8,40 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <header><h1>Learn Sanskrit</h1></header>
-    <main>
-      <h1 align="center">Match Yoga Pose to Sanskrit Term</h1>
-
+    <header>
+      <!-- <h1>Learn Sanskrit</h1> -->
+    <div class="nav-toggle">
+      <div class="nav-toggle-bar"></div>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li>
+          <a href="#">Terminology</a>
+        </li>
+        <li>
+          <a href="#">Poses</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    
+    </header>
+    <main class="wrapper">
+      <h2 align="center">Match Yoga Pose to Sanskrit Term</h2>
+      <div class="answer-container">
       <div class="answers">
         <li class="drag" data-ans="virabradasanatwo"><p>Virabradasana II</p></li>
         <li class="drag" data-ans="virabradasanaone"><p>Virabradasana I</p></li>
       </div>
-
+</div>
+<div class="question-container">
       <div class="questions">
         <li class="drop" data-soln="virabradasanatwo"><img src="./assets/warrior2a.png" alt="virabradasana two"></li>
         <li class="drop" data-soln="virabradasanaone"><img src="./assets/warrior-one-pose-300x300.png" alt="virabradasana one"></li>
       </div>
-
+      </div>
       <button class="assess" onclick="myFunction()">Assess!</button>
 
       <section class="score">
